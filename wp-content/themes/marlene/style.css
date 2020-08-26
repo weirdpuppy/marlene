@@ -1,0 +1,320 @@
+/*
+Theme Name: Marlene
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: roxanne
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+h1, h2, h3, h4 {
+    font-variant: small-caps;
+}
+
+h1 { font-size: 2em; }
+h2 {  font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+
+p, h3 {
+    margin: 0!important;
+}
+
+/* .elementor-section {
+    position: relative;
+    max-width: 1050px;
+    margin-right: 1.1em;
+    margin: auto;
+} */
+
+/****************HEADER**************/
+#content-wrap {
+    padding: 0!important;
+}
+.menu-col {
+    max-width: 700px;
+    margin: auto;
+}
+
+.title, .subtitle {
+    text-align: left!important;
+}
+
+.subtitle h2{
+    font-variant: normal;
+}
+
+.menu-col .left-col, .menu-col .right-col
+{
+   display: inline-block;
+}
+
+.menu-col .left-col {
+    width: 70%!important;
+    margin-right: 30px;
+    max-width: fit-content;
+}
+
+.menu-col .right-col {
+    max-width: max-content;
+}
+
+.mob-men {
+    margin-top: -20px;
+}
+
+
+/***************MOBILE NAV***************/
+.mobile-nav a {
+    font-size: 1.8em;
+}
+
+.mobile-nav ul {
+    list-style-type: none!important;
+    margin-left: -0px;
+}
+
+.mobile-nav li {
+    padding-bottom: 10px;
+}
+
+.mobile-nav a:hover {
+    opacity: .5;
+}
+
+.mobile-nav-contact a {
+    width: 100%!important;
+}
+
+#popmake-147 {
+    padding: 50px 10px;
+    width: 100vw!important;
+    margin-left: 0!important;
+    position: absolute!important;
+    left: 0!important;
+    top: 0!important;
+    -webkit-box-shadow: 0 12px 6px -6px #3c3a3a;
+	   -moz-box-shadow: 0 12px 6px -6px #3c3a3a;
+	        box-shadow: 0 12px 6px -6px #3c3a3a;
+}
+
+#popmake-147 button.pum-close.popmake-close {
+    margin-top: 60px;
+}
+
+.contact-page {
+    max-width: 500px!important;
+    margin: auto;
+}
+
+/***************FOOTER*******************/
+
+.footer-nav a {
+    color: white;
+    font-size: 1.2em;
+    transition: 1s;
+}
+
+.footer-nav a:hover {
+    opacity: .5;
+    color: white;
+}
+
+.footer-nav ul {
+    list-style-type: none!important;
+    margin-left: -0px;
+}
+
+.footer-nav a:hover {
+    opacity: .5;
+}
+
+@media only screen and (max-width: 768px) { 
+    .footer-nav {
+        text-align: center;
+    }
+}
+
+/*************FORMS****************/
+.wpforms-confirmation-container-full {
+    background: white;
+    border: black 1px solid;
+  }
+  .mailing {
+    max-width: 250px;
+}
+  .mailing-btn {
+    width: 100%!important;
+    border: 2px solid white!important;
+    background: rgba(0,0,0,0)!important;
+    font-family: 'Roboto'!important;
+    font-size: .8em!important;
+}
+.mailing-btn:hover {
+    background: white!important;
+    color: black!important;
+}
+
+.contact-btn {
+    background: black!important;
+    font-family: Roboto!important;
+    margin: auto!important;
+    width: 100%!important;
+    max-width: 150px;
+    margin-left: 33%!important;
+}
+
+input, textarea {
+    border-radius: 0!important;
+    border: solid 1px black!important;
+}
+
+@media only screen and (min-width: 360px) { 
+    .contact-btn {
+        margin-left: 0!important;
+        max-width: 100%!important;
+    }
+}
+
+/***********POPUP******************/
+#popmake-134 {
+    max-width: 500px!important;
+    margin: auto;
+    left: 50%!important;
+    transform: translate(-50%, 0%);
+}
+
+/***************BLOG**************/
+
+.single-post .page-header{
+    display: none!important;
+}
+
+.container.clr.page-header-inner {
+    max-width: 1050px!important;
+    margin: 0 1.5em!important;
+}
+
+aside {
+    border-right: 1px solid black;
+    height: 600px;
+    margin-top: -50PX;
+
+}
+
+.searchandfilter input[type="submit"] {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+header.page-header {
+    left: 33%;
+}
+
+header.entry-header.clr {
+    max-width: 1050px!important;
+    width: 100%!important;
+}
+
+.search-full { display: inline-block; }
+.search-mobile { 
+    display: none; 
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.hyperlink {
+    text-decoration: underline!important;
+}
+#popmake-222 {
+    max-width: 300px!important;
+    left: 50%!important;
+    transform: translate(-50%, 0px);
+    text-align: center!important;
+}
+
+.blog-entry-inner.clr {
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding-bottom: 20px!important;
+    transition: 1s;
+}
+
+.blog-entry-inner.clr a{ color: white!important;}
+
+h3.theme-heading.related-posts-title {
+    padding-bottom: 20px;
+}
+
+header.blog-entry-header.clr, .blog-entry-summary.clr {
+    visibility: hidden;
+} 
+
+.blog-entry.grid-entry .blog-entry-inner {
+    padding: 0 20px 0px;
+}
+.blog-entry-inner.clr:hover {
+    background: black;
+}
+.blog-entry-inner.clr:hover header.blog-entry-header.clr,
+.blog-entry-inner.clr:hover .blog-entry-summary.clr 
+ {
+    visibility: visible;
+}
+
+.single-post.content-max-width .entry-header, #related-posts, .single-post.content-max-width .thumbnail, .single-post.content-max-width ul.meta, .single-post.content-max-width .entry-content h1, .single-post.content-max-width .entry-content h2, .single-post.content-max-width .entry-content h3, .single-post.content-max-width .entry-content h4, .single-post.content-max-width .entry-content h5, .single-post.content-max-width .entry-content h6, .single-post.content-max-width .entry-content blockquote, .single-post.content-max-width .entry-content p, .single-post.content-max-width .wp-block-image, .single-post.content-max-width .wp-block-gallery, .single-post.content-max-width .wp-block-video, .single-post.content-max-width .wp-block-quote, .single-post.content-max-width .wp-block-text-columns, .single-post.content-max-width .wp-block-code, .single-post.content-max-width .entry-content ul, .single-post.content-max-width .entry-content ol, .single-post.content-max-width .wp-block-cover-text, .single-post.content-max-width .post-tags, .single-post.content-max-width .comments-area {
+    margin: auto!important;
+    max-width: 900px!important;
+}
+
+h2.single-post-title.entry-title {
+    padding-top: 30px;
+}
+
+div#content {
+    padding-bottom: 30px;
+}
+.related-post img {
+    height: 300px!important;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 959px) { 
+    aside {
+        height: min-content;
+        border-right: none;
+    }
+
+    .search-full { display: none; }
+    .search-mobile { display: block; }
+    header.page-header {
+        left: 0%;
+        padding: 20px;
+    }
+    
+}
+
+/****************NEWS***************/
+.search-bar {
+    max-width: 270px;
+    right: 0;
+    position: absolute!important;
+}
+
+.wpcap-post {
+    background: white!important;
+}
+
+article.single-page-article.clr {
+    max-width: 900px!important;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) { 
+    .search-bar {
+        left: 0;
+    }
+}
